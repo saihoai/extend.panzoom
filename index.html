@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Panzoom for jQuery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/extend.panzoom.css" rel="stylesheet"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.panzoom.js"></script>
+    <script src="js/jquery.ui.js"></script>
+    <script src="js/extend.panzoom.js"></script>
+  </head>
+  <body>
+    <section id="focal">
+      <div class="stone-planner step-2">
+        <div class="panel">
+          <div class="slab-area">
+                <div class="piece piece1">
+                    <div class="inner">
+                        <span class="pid">DR001</span>
+                    </div>
+                </div>
+                
+                <div class="piece piece2">
+                    <div class="inner">
+                        <span class="pid">DR001</span>
+                    </div>
+                </div>
+            </div>
+        </div><!-- div.panel -->
+      </div>
+      <script>
+        jQuery(function($) {
+          $('.piece.piece1').draggable({containment: '.stone-planner'});
+          $('.piece.piece2').draggable({containment: '.stone-planner'});
+          $('.slab-area').expanzoom();
+        });
+      </script>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+.stone-planner.step-2 .panel {width: 1000px;height: 500px;border: 1px solid #aaa;background: #ededeb; margin: auto;overflow: hidden}
+.slab-area {background: url("../images/stone_planner_bg.png");height: 500px;width: 1000px;position: relative;}
+.piece {background: #ddd;border: 1px solid #aaa;width: 100px;height: 150px;position: absolute;}
+.piece1 {top: 10px; left: 20px}
+.piece2 {top: 10px; left: 500px}
